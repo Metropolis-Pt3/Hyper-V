@@ -106,7 +106,7 @@ function Get-TimeStamp {
 }
 
 #Log path/name/location
-$LogPath = "c:\ESD\Logs\Install-HyperV-CreateVM.log"
+$LogPath = "C:\Windows\Logs\Install-HyperV-CreateVM.log"
 $LogDir = Split-Path $LogPath
 if (-not (Test-Path $LogDir)) {
     New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
@@ -320,7 +320,7 @@ try {
         Set-VMFirmware -VMName $VMName -EnableSecureBoot On -SecureBootTemplate "MicrosoftWindows" -ErrorAction Stop
     }
     else {
-        # Secure Boot is ON — make sure it's using the Windows template (not the Microsoft UEFI CA)
+        # Secure Boot is ON Â— make sure it's using the Windows template (not the Microsoft UEFI CA)
         if ($fw.SecureBootTemplate -ne 'MicrosoftWindows') {
             Write-Host "$(Get-TimeStamp) Secure Boot is ON but template is '$($fw.SecureBootTemplate)'. Switching to Microsoft Windows..." -ForegroundColor Cyan
             Set-VMFirmware -VMName $VMName -SecureBootTemplate "MicrosoftWindows" -ErrorAction Stop
