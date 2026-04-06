@@ -33,7 +33,8 @@
 .NOTES/REFERENCES
   Current Version=2.2.42
   Date: 3.6.2026
-  Author: Neo (Steve Molzahn)
+  Author: Steve Molzahn
+  Inspiration: GetRubrix
   
   References:
   Required: Please download Windows 11 .iso from Microsoft.
