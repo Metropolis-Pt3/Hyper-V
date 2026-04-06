@@ -15,7 +15,7 @@
 
   -IncludeGuiTools = Forces install of the Hyper-V GUI Tools
 
-  -Autopilot = Gathers ComputerInfo and Corporate Identifier
+  -Autopilot = Gathers Info for Corporate Identifier
 
   -NoRestart = Prevents the restart of the computer
 
