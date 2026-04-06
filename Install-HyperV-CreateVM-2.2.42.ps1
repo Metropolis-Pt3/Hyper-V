@@ -21,7 +21,7 @@
 
   -PowerOn = Start the Hyper-V VM
 
-  -ProductKey = Displays Windows 11 Product Key from Hyper-V host (If host if Windows 11)
+  -ProductKey = Displays Windows 11 Product Key from Hyper-V host (If host is Windows 11)
 
   EXAMPLE
     .\Install-HyperV-CreateVM-2.2.38.ps1 -Name <Name> -CPUCount <1-6> -HyperV -IncludeGuiTools -Autopilot -NoRestart -PowerOn -ProductKey
